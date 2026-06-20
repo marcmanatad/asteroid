@@ -20,8 +20,10 @@ def main():
             pass
         pygame.Surface.fill(screen, color="black")
         player.draw(screen)
+        player.update(dt)
         pygame.display.flip()
         dt = clock.tick(60) / 1000
+        
         
 
     for event in pygame.event.get():
